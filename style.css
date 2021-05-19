@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vw; 
+    background-color: #f8e7af;
+    display: grid;
+    place-items: center; /* shortcut hai align-items,justify-items  ka */
+}
+
+form{    
+    background-color: #fab1a0;
+    padding: 80px;
+    width: 50%;
+    margin: 100px auto;
+    text-align: center;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+#temp {
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+#tempCalc label{
+    font-size: 30px;
+}
+
+
+
+#temp_diff {
+    height: 40px;
+    border: none;
+    margin-top: 20px;
+    font-size: 15px;
+    vertical-align: top;
+}
+/* ---------------------------- */
+[type="submit"] {
+    height: 35px;
+    margin: 20px;
+    width: 100px;
+    font-size: 15px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+/*  ----- OR---- */
+
+/* #btn{
+    height: 35px;
+    margin: 20px;
+    width: 100px;
+    font-size: 15px;
+    border: none;
+    background-color: black;
+    color: white;
+} */
+
+/* ---------------------------------- */
+
+#resultContainer {
+    font-size: 25px;
+}

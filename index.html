@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Calculator</title>
+</head>
+<body>
+    
+    <!-- Hum CSS m jo design BODY ko  kiye hai us se jo mera koi v element hoga vo ceneter m aa jaiga
+         isiliye hm <div> tag nhi bnaige. Direct use kreinge <form> tag ko -->
+
+    <form id="tempCalc" onsubmit="calculateTemp(); return false"> <!-- return false use isiliye kiye hai taki mera form automatic submit na ho-->
+        
+        <label for="temp">Please enter the temperature you'd like to convert.</label>
+        <br/>
+        <input type="number" name="temp" id="temp">
+
+        <select name="temp_diff" id="temp_diff">
+            <option value="cel">°Celsius</option>
+            <option value="fah">°Fahrenheit</option>
+        </select>
+        <br/>
+        <input type="submit" name="temp" id="btn">
+        <br/>
+        <span id="resultContainer"></span>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
